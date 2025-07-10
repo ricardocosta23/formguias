@@ -8,9 +8,9 @@ class MondayAPI:
 
     def __init__(self):
         # Direct token configuration (like your other project)
-        self.api_token = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjQxMDM1MDMyNiwiYWFpIjoxMSwidWlkIjo1NTIyMDQ0LCJpYWQiOiIyMDI0LTA5LTEzVDExOjUyOjQzLjAwMFoiLCJwZXIiOiJtZTp3cml0ZSIsImFjdGlkIjozNzk1MywicmduIjoidXNlMSJ9.hwTlwMwtbhKdZsYcGT7UoENBLZUAxnfUXchj5RZJBz4"
+        # self.api_token = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjQxMDM1MDMyNiwiYWFpIjoxMSwidWlkIjo1NTIyMDQ0LCJpYWQiOiIyMDI0LTA5LTEzVDExOjUyOjQzLjAwMFoiLCJwZXIiOiJtZTp3cml0ZSIsImFjdGlkIjozNzk1MywicmduIjoidXNlMSJ9.hwTlwMwtbhKdZsYcGT7UoENBLZUAxnfUXchj5RZJBz4"
         # Fallback to environment variable if needed
-        # self.api_token = os.environ.get("MONDAY_API_TOKEN") or "your_token_here"
+        self.api_token = os.environ.get("MONDAY_API_TOKEN") or "your_token_here"
         self.api_url = "https://api.monday.com/v2"
         self.headers = {
             "Authorization": f"Bearer {self.api_token}",
