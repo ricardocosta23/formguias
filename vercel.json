@@ -11,8 +11,5 @@
       "src": "/(.*)",
       "dest": "app.py"
     }
-  ],
-  "env": {
-    "MONDAY_API_TOKEN": "@monday_api_token"
-  }
+  ]
 }
